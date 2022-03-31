@@ -1,0 +1,14 @@
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  transition: opacity ease-out 0.7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}

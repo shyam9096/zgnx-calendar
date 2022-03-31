@@ -1,0 +1,108 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.zogenixCorporateCalendar {
+  .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+  .viewall_Position {
+    text-align: right;
+    border-bottom: 1px solid rgb(175, 172, 172);
+  }
+
+  .location {
+    font-family: alwyn-new-rounded-web, sans-serif !important;
+    color: #383838 !important;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  .Calendar {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(175, 172, 172);
+
+    div {
+      font-size: 15px;
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+      margin: 7px;
+    }
+    .Icon {
+      margin-right: 5px;
+    }
+    .Calendar_Heading {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .viewall {
+    font-size: 16px;
+    color: #616060 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid grey;
+  }
+  .Title_card {
+    padding: 20px;
+    margin-bottom: -54px;
+    font-size: 17px;
+    color: #616060 !important;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .pinkColorText {
+    color: #dd1291;
+    justify-content: space-between;
+    text-align: center;
+    height: 130px;
+  }
+  .cardHeader {
+    color: white;
+    background-color: #007396;
+    padding: 1.2rem;
+    padding-top: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .cardsInOneLIne {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+  }
+  .card {
+    padding-top: 30%;
+  }
+}
